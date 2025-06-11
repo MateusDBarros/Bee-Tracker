@@ -1,0 +1,60 @@
+/* style.css */
+
+.navbar-custom-color {
+    background-color: #FFA500;
+    color: white;
+}
+
+
+
+.card-text {
+    padding: 16px;
+    text-align: center;
+}
+
+body {
+    font-family: cursive, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    background: gainsboro;
+}
+
+.highlight-text {
+    color: #FFA500;
+}
+.navbar-brand .highlight-text {
+    color: black;
+}
+
+
+.main-content {
+
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.addButton {
+    background-color: #FFA500;
+    width: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.second-page-container {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.container1 {
+    max-width: 600px;
+    padding: 20px;
+}
