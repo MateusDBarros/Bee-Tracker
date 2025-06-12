@@ -1,3 +1,4 @@
+
 document.addEventListener('DOMContentLoaded', function() {
     const API_BASE_URL = 'http://localhost:8080/candidaturas'; // Verifique se a porta corresponde ao seu backend Spring Boot
 

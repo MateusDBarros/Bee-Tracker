@@ -7,6 +7,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Optional;
 
 @RestController
 @RequestMapping("/candidaturas")
@@ -29,6 +30,12 @@ public class OfferController {
     public ResponseEntity<List<Offer>> retrieveData() {
         List<Offer> data = services.retrieveData();
         return ResponseEntity.status(HttpStatus.OK).body(data);
+    }
+
+    @GetMapping("/{id}")
+    public ResponseEntity<Offer> getOfferById(@PathVariable Integer id) {
+        Offer offer = services.findById(id);
+        return ResponseEntity.status(HttpStatus.OK).body(offer);
     }
 
     @PutMapping("/{id}")

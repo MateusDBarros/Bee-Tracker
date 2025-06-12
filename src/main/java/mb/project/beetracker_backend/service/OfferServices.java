@@ -6,6 +6,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class OfferServices {
@@ -28,6 +29,11 @@ public class OfferServices {
 
     public List<Offer> retrieveData() {
         return repository.findAll();
+    }
+
+    public Offer findById(Integer id) {
+        return repository.findById(id)
+                .orElseThrow(() -> new IllegalStateException("Oferta não encontrada para o ID: " + id));
     }
 
     @Transactional
