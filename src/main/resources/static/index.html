@@ -1,42 +1,54 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bee Tracker</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
-    <link rel="stylesheet" href="/css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bee Tracker - Login</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+  <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
+<div class="toast-container position-fixed bottom-0 end-0 p-3" style="z-index: 1100">
+<nav class="navbar navbar-expand-lg navbar-custom-color">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html">Bee Tracker</a>
+  </div>
+</nav>
 
-    <nav class="navbar navbar-expand-lg navbar-custom-color">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">Bee Tracker</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                    <a class="nav-link" href="vagas.html">Minhas Candidaturas</a>
-                    <a class="nav-link disabled" aria-disabled="true">Login</a>
-                </div>
-            </div>
+<div class="main-content">
+  <div class="container-login">
+    <div class="login-form">
+      <h2 class="text-center mb-4">Acesse sua Conta</h2>
+      <form id="loginForm" action="#" method="POST">
+        <div class="mb-3">
+          <label for="email" class="form-label">Endereço de Email</label>
+          <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Digite seu email" required>
+          <div id="emailHelp" class="form-text">Nunca compartilharemos seu email com ninguém.</div>
         </div>
-    </nav>
-
-    <div class="main-content">
-        <div class="container1">
-            <h1 class="card-title">Bee <span class="highlight-text">Tracker</span></h1>
-            <p class="card-text">Seu site personalizado para gerenciar candidaturas em processos seletivos</p>
+        <div class="mb-3">
+          <label for="password" class="form-label">Senha</label>
+          <input type="password" class="form-control" id="password" placeholder="Digite sua senha" required>
         </div>
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="rememberMe">
+          <label class="form-check-label" for="rememberMe">Lembrar-me</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Entrar</button>
+        <div class="text-center mt-3">
+          <a href="#" class="text-decoration-none" style="color: #FFA500;">Esqueceu sua senha?</a>
+        </div>
+      </form>
     </div>
+  </div>
+</div>
 
-        <footer class="page-footer font-small bg-dark text-white py-3"> <div class="container text-center"> <p class="mb-0">&copy; 2025 Bee Tracker. Todos os direitos reservados.</p>
-            <a class="linkedin-link text-white-50" href="https://www.linkedin.com/in/mateus-barros13" target="_blank">LinkedIn</a>
-            <a class="linkedin-link text-white-50" href="https://www.github.com/mateusDBarros" target="_blank">GitHub</a>
-
-        </div>
-        </footer>
+<footer class="page-footer font-small bg-dark text-white py-3">
+  <div class="container text-center">
+    <p class="mb-0">&copy; 2025 Bee Tracker. Todos os direitos reservados.</p>
+    <a class="linkedin-link text-white-50 me-3" href="https://www.linkedin.com/in/mateus-barros13" target="_blank">LinkedIn</a>
+    <a class="linkedin-link text-white-50" href="https://www.github.com/mateusDBarros" target="_blank">GitHub</a>
+  </div>
+</footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
 <script src="/js/script.js"></script>
