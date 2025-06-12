@@ -1,6 +1,6 @@
 
 document.addEventListener('DOMContentLoaded', function() {
-    const API_BASE_URL = 'http://localhost:8080/candidaturas'; // Verifique se a porta corresponde ao seu backend Spring Boot
+    const API_BASE_URL = 'https://bee-tracker-api.onrender.com/candidaturas'; // Verifique se a porta corresponde ao seu backend Spring Boot
 
     // --- Função para exibir Toasts ---
     function showToast(message, type = 'success') {
