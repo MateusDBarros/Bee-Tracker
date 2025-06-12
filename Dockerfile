@@ -1,10 +1,10 @@
-FROM openjdk:17-jdk-slim
-
+FROM eclipse-temurin:17-jdk-jammy as builder
 WORKDIR /app
+COPY . .
+RUN mvn clean install -DskipTests
 
-ARG JAR_FILE=target/beetracker-backend-0.0.1-SNAPSHOT.jar
-COPY ${JAR_FILE} app.jar
-
+FROM eclipse-temurin:17-jre-jammy
+WORKDIR /app
+COPY --from=builder /app/target/*.jar app.jar
 EXPOSE 8080
-
-ENTRYPOINT ["java","-jar","/app/app.jar"]
+ENTRYPOINT ["java", "-jar", "app.jar"]

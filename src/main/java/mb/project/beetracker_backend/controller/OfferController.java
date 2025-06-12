@@ -11,7 +11,7 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("/candidaturas")
-@CrossOrigin(origins = "http://localhost:63343")
+@CrossOrigin(origins = "*")
 public class OfferController {
 
     private final OfferServices services;
