@@ -85,8 +85,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 <td>${offer.company}</td>
                 <td><span class="status-badge status-${offer.status}">${offer.status.replace(/_/g, ' ')}</span></td>
                 <td class="text-center">
-                    <button class="btn btn-info btn-sm me-2 btn-edit" data-id="${offer.id}">Editar</button>
-                    <button class="btn btn-danger btn-sm btn-delete" data-id="${offer.id}">Excluir</button>
+                    <button class="btn btn-info btn-sm me-2 btn-edit" data-id="${offer.id}" style="width: 80px; text-align: center;">Editar</button>
+                    <button class="btn btn-danger btn-sm btn-delete" data-id="${offer.id}" style="width: 80px; text-align: center;">Excluir</button>
                 </td>
             `;
         } else {
